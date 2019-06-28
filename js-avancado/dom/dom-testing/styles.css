@@ -1,0 +1,31 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.8;
+
+}
+body {
+  text-align: center;
+}
+.txt-has-centered {
+  margin-bottom: 10px;
+}
+
+.btn-are-blocks-now {
+  display: block;
+}
+
+#cor {
+  display:block;
+  color:red;
+}
+
+.lists-are-organized {
+  display:block;
+  color:red;
+  background-color: lightgray;
+}
+.lines-has-style {
+  list-style: none;
+  background-color: lightgray;
+}
