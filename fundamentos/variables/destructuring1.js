@@ -57,3 +57,10 @@ const obj = {min: 100, max: 500};
 console.log(rand(obj));
 
 console.log(rand({}));
+
+function somando ({a = 4, b = 8}) {
+    let valor = Math.pow(a, b) + a;
+    return valor;
+}
+
+console.log(somando({a:2, b: 4}));

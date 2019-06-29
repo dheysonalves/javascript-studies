@@ -17,4 +17,4 @@ function f1() {
     return this;
 }
 
-f1() === window;
+// f1() === window;

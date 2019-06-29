@@ -15,11 +15,11 @@ user.sayHi();
 
 // Dependendo de quem esta chamando, a chamada e diferente
 
-let user = { name: "John" };
+let user2 = { name: "John" };
 let admin = { name: "Admin" };
 
 function sayHi() {
-  alert( this.name );
+  console.log( this.name );
 }
 
 // use the same function in two objects
