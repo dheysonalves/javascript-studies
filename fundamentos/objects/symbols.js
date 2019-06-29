@@ -21,7 +21,7 @@ let id2 = Symbol("id");
 console.log(id1 == id2); // falso
 
 /*
-    Synbols nao possuem auto conversao para String
+    Symbols nao possuem auto conversao para String
     E uma "Protecao de linguagem"
     Pois ambos sao fundamentalmente diferentes
     Temos que fazer manualmente

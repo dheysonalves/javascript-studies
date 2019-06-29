@@ -15,4 +15,4 @@ function doNothing() {
     return;
 }
 
-console.log (doNothing() === undefined);
+console.log (doNothing() === undefined); // true

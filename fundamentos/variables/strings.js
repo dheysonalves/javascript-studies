@@ -32,4 +32,4 @@ console.log(eval(obj_str))
 
 console.log(obj_str.valueOf())
 
-[1,2].forEach("Ok")
+// [1,2].forEach("Ok")

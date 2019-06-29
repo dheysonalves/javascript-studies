@@ -2,7 +2,7 @@
 
 // Para acessar objetos, um metodo pode usar a palavra this
 
-let user = {
+let userTest = {
     name: "John",
     age: 30,
 
@@ -11,11 +11,11 @@ let user = {
     }
 }
 
-user.sayHi();
+userTest.sayHi();
 
 // Dependendo de quem esta chamando, a chamada e diferente
 
-let user2 = { name: "John" };
+let user = { name: "John" };
 let admin = { name: "Admin" };
 
 function sayHi() {
@@ -38,3 +38,17 @@ admin['f']();
      Por um lado, uma função pode ser reutilizada para diferentes objetos. 
      Por outro lado, uma maior flexibilidade abre um espaço para erros.
 */
+
+let object = {
+    nome: 'John',
+    numero: 10,
+    falaOi() {
+      console.log('Olá' + this.nome);
+    }
+}
+
+console.log(object.nome);
+console.log(object.falaOi());
+
+const retorno = object.falaOi.bind(object);
+retorno();
