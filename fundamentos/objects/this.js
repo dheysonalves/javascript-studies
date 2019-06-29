@@ -52,3 +52,14 @@ console.log(object.falaOi());
 
 const retorno = object.falaOi.bind(object);
 retorno();
+
+let a = 3;
+console.log(this.a);
+
+this.c = 289;
+console.log(this.c);
+global.b = 99;
+console.log(global.b);
+
+console.log(module.exports.c)
+console.log(module.exports === this)
