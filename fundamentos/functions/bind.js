@@ -18,3 +18,13 @@ function f1() {
 }
 
 // f1() === window;
+
+function Dinheiro() {
+    this.quantidade = 30
+    setInterval(() => {
+        this.quantidade++
+        console.log(this.quantidade)
+    }, 1000);
+}
+
+new Dinheiro
