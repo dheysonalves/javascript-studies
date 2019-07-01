@@ -38,3 +38,13 @@ console.log(soma2(4, 2));
 const subtracao = (a, b) => a - b;
 
 console.log(subtracao(2, 3));
+
+let checkAge = (age > 18) ? true : confirm('Do you have your parents permission to access this page?');
+
+function checkAge(age) {
+    return (age > 18) ? true : confirm('Do you have your parents permission to access this page?');
+}
+
+function checkAgeOr(age) {
+    return (age > 18) || confirm('Did you parents allow u?');
+}
