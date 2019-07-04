@@ -6,7 +6,7 @@ function loadScript(src, callback) {
 }
 
 /* loadScript('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js', script => {
-    alert(`Cool, the ${script.src} is loaded`);
+    alert(`Cool, the ${script.src} is loaded`); 
     alert(_); // function declared in the loaded script
 }); */
 
