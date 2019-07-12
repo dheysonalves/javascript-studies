@@ -15,8 +15,11 @@ let key = "likes birds";
 user[key] = true;
 // chave é calculada em tempo de execução
 
-let bag = {
+/* let bag = {
   [fruit]: 5, // the name of the property is taken from the variable fruit
 };
 
-console.log( bag.apple ); // 5 if fruit="apple"
+console.log( bag.apple ); // 5 if fruit="apple" */
+
+delete user.age
+console.log(user)
