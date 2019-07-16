@@ -47,19 +47,21 @@ let object = {
     }
 }
 
-console.log(object.nome);
-console.log(object.falaOi());
+console.log(object.nome); // John
+console.log(object.falaOi()); // undefined
+console.log(object.falaOi()); // undefined
 
 const retorno = object.falaOi.bind(object);
-retorno();
+retorno(); // ola jogn
+retorno()
 
 let a = 3;
-console.log(this.a);
+console.log(this.a); // undefined
 
 this.c = 289;
-console.log(this.c);
+console.log(this.c); // 289
 global.b = 99;
-console.log(global.b);
+console.log(global.b); // 99
 
-console.log(module.exports.c)
+console.log(module.exports.c) // 289
 console.log(module.exports === this)
