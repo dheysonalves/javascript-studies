@@ -1,6 +1,7 @@
 const pai = {
     nome: 'Carlos',
-    cor_cabelo: 'Preto'
+    cor_cabelo: 'Preto',
+    trabalho: 'Devenvolvedor'
 };
 
 const filha1 = Object.create(pai);
@@ -21,4 +22,17 @@ for (const key in filha2) {
     } else {
         console.log(`O valor e ${key}`); // Inherited: cor_cabelo
     }
+}
+
+const filha3 = Object.create(pai, {
+    nome: { value: 'Tig', writable: false, enumerable: true}
+});
+
+console.log(filha3.nome);
+
+for (const key in filha3) {
+    if (filha3.hasOwnProperty(key)) {
+        console.log(`O valor e ${key}`)
+    }
+    console.log(`O valor e ${key}`)
 }
