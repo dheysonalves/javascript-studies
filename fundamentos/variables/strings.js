@@ -33,3 +33,12 @@ console.log(eval(obj_str))
 console.log(obj_str.valueOf())
 
 // [1,2].forEach("Ok")
+
+function length(str) {
+    let x = Array.from(str).length
+    if (x < 0) return
+    x--;
+    return length(str)
+}
+
+console.log(length('Ok'))
