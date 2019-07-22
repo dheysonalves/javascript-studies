@@ -10,10 +10,10 @@ filha1.nome = 'Bia';
 console.log(filha1.nome);
 
 const filha2 = Object.create(pai, {
-    nome: { value: 'Joana', writable: false, enumerable: true}
+    nome: { value: 'Joana', writable: false, enumerable: true }
 });
 
-filha2.nome = 'Juliana'
+filha2.nome = 'Juliana';
 console.log(filha2.nome);
 
 for (const key in filha2) {
