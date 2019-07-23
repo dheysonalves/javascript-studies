@@ -1,0 +1,3 @@
+class ExtendedClock extends Clock {
+    
+}
