@@ -12,3 +12,6 @@ const modelx = require('factor')
 // setInterval(() => console.log(_.random(800, 2000)), 1000);
 
 console.log(modelx.doSomething())
+
+console.log(module.exports === this)
+console.log(module.exports === exports)
