@@ -13,11 +13,10 @@ const falando = pessoa.falar.bind(pessoa);
 falando();
 
 
-function f1() {
+function f1() { // f1() === window;
     return this;
 }
 
-// f1() === window;
 
 function Dinheiro() {
     this.quantidade = 30
