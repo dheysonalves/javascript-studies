@@ -41,3 +41,30 @@ let onlyPrice = produto => produto.preco
 console.log(carrinho.map(parseObject).map(onlyPrice))
 
 
+const data = [
+    {
+      name: 'Butters',
+      age: 3,
+      type: 'dog'
+    },
+    {
+      name: 'Lizzy',
+      age: 6,
+      type: 'dog'
+    },
+    {
+      name: 'Red',
+      age: 1,
+      type: 'cat'
+    },
+    {
+      name: 'Joey',
+      age: 3,
+      type: 'dog'
+    },
+  ];
+
+let onlyDog =  e => e.type == 'dog'
+let returnAge = e => e.age *= 7
+let sumThemAll = e => e.age 
+console.log(data.filter(onlyDog).map(returnAge))  

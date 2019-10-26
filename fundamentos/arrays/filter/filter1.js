@@ -23,3 +23,13 @@ console.log(produtos.filter(function(e){
     return e.preco > 1000 & e.fragil == true
 }))
 
+const student = [
+    {nome: 'Paulo', age: 32, curso: 'Ciencia'},
+    {nome: 'Paula', age: 23, curso: 'Ciencia'},
+    {nome: 'Rodrigues', age: 22, curso: 'Ciencia'}
+]
+
+let byAge = e => e.age > 24
+
+console.log(student.filter(byAge))
+
