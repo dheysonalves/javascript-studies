@@ -2,49 +2,43 @@
 
 ## Description
 
-Repositório com exercícios e atividades envolvendo Javascript.
+A javascript repository from a beginner developer
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* Your favorite editor (Sublime, Vs Code...)
+* Node JS
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* You can find node here [Node JS Download](https://nodejs.org/en/download/)
+* I recommend this editor [Visual Studio Code](https://code.visualstudio.com/download), but you can get any.
 
 ### Executing program
 
 * How to run the program
 * Step-by-step bullets
 ```
-code blocks for commands
+  node [program-name]
 ```
 
 ## Help
 
 Any advise for common problems or issues.
+Or send a pull-request
 ```
-command to run if program contains helper info
+ node
+ .help
 ```
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+Dheyson Alves
+[@dheysonAlves2](https://twitter.com/DheysonAlves2)
 
 ## License
 
@@ -53,8 +47,5 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [Javascript info](https://javascript.info/)
+* [You don't know JS yet](https://github.com/getify/You-Dont-Know-JS)
