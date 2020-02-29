@@ -2,8 +2,19 @@ document.getElementById("button1").addEventListener("click", getData);
 document.getElementById("button2").addEventListener("click", getJsonData);
 document.getElementById("button3").addEventListener("click", getExternalApi);
 
+function getHeaders() {
+  const myHeaders = new Headers();
+  const myInit = {
+    method: "GET",
+    headers: myHeaders,
+    mode: "cors",
+    cache: "default"
+  };
+  return myInit;
+}
+
 function getData(e) {
-  fetch("test.txt")
+  fetch("test.txt", getHeaders)
     .then(function(res) {
       return res.text();
     })
@@ -17,7 +28,7 @@ function getData(e) {
 }
 
 function getJsonData(e) {
-  fetch("posts.json")
+  fetch("posts.json", getHeaders)
     .then(function(res) {
       return res.json();
     })
@@ -36,7 +47,7 @@ function getJsonData(e) {
 }
 
 function getExternalApi(e) {
-  fetch("https://api.github.com/users")
+  fetch("https://api.github.com/users", getHeaders)
     .then(function(res) {
       return res.json();
     })
