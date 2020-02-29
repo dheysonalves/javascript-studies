@@ -22,7 +22,9 @@ function getData(e) {
       document.getElementById("output").innerHTML = data;
     })
     .catch(function(err) {
-      console.error(err);
+      console.error(
+        "There has been a problem with your fetch operation: " + err.message
+      );
     });
   e.preventDefault();
 }
@@ -60,7 +62,9 @@ function getExternalApi(e) {
       document.getElementById("output").innerHTML = output;
     })
     .catch(function(err) {
-      console.error(err);
+      console.error(
+        "There has been a problem with your fetch operation: " + err.message
+      );
     });
   e.preventDefault();
 }
