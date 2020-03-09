@@ -1,5 +1,8 @@
 # Estudos-javascript
 
+![As fast as we can](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
+![Lets learn to code](https://media.giphy.com/media/xT1XGzXhVgWRLN1Cco/giphy.gif)
+
 ## Description
 
 A javascript repository from a beginner developer
