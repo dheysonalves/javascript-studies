@@ -1,18 +1,12 @@
 # Estudos-javascript
----
-description: Uma pequena introdução do objetivo desta documentação pessoal.
----
-
 
 ![As fast as we can](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
-# 'Breakpoint' - Uma introdução
 ![Lets learn to code](https://media.giphy.com/media/xT1XGzXhVgWRLN1Cco/giphy.gif)
 
 
 ## Description
 * [Developer Roadmap 2020](https://github.com/kamranahmedse/developer-roadmap)😀 
 * [Front end Masters 2019 Book](https://frontendmasters.com/books/front-end-handbook/2019/)
-
 
 A javascript repository from a beginner developer
 Anotações, leituras e temas mais específicos relacionados a computação, programação, performance e processos relacionados aos meus estudos pessoais.
