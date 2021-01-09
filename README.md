@@ -1,4 +1,4 @@
-# Estudos-javascript
+# Javascript Studies
 
 ![As fast as we can](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
 ![Lets learn to code](https://media.giphy.com/media/xT1XGzXhVgWRLN1Cco/giphy.gif)
