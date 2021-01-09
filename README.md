@@ -9,8 +9,6 @@
 * [Front end Masters 2019 Book](https://frontendmasters.com/books/front-end-handbook/2019/)
 
 A javascript repository from a beginner developer
-Anotações, leituras e temas mais específicos relacionados a computação, programação, performance e processos relacionados aos meus estudos pessoais.
-
 
 ## Getting Started
 
