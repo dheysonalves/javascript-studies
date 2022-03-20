@@ -43,3 +43,10 @@ Convert everything to decimal number, then get back to floating point number
 (1 + (0.1 * 10) + 2 + (0.2 * 10)) / 10 // input
 0.6 // output
 ```
+
+To read more about it:
+
+- <https://fabiensanglard.net/floating_point_visually_explained>
+- <https://github.com/alexreardon/big-number-demos>
+- <https://github.com/MikeMcl/bignumber.js/>
+- [Alexander Reardon: Let's go big (Big numbers in JavaScript) | JSConf EU 2017](https://www.youtube.com/watch?v=9SHOfZI_SsM&t=26s)
