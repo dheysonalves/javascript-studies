@@ -6,6 +6,31 @@
 
 - Which types does work as a memory reference based ? How does it work ?
 
+## Introduction
+
+There are multiple ways that .js files might work together. There are standalone files that works by it self, modules bases which works as mini-files that work with other mini-files. There are javascript files that are mixup with build time in a single file.
+
+In any case, javascript files does have many ways to manage workflow, but we follow that each file works as a mini-file between a another group of mini-files which results in an application.
+
+---
+
+## VAR, LET AND CONST
+
+### CONST
+
+Following the use-case for const, we should avoid using const for non-primitive times, which might lead to confusion, based on YOU DONT KNOW JS YET:
+
+_const declared variables are not "unchangeable", they just cannot be re-assigned. It's ill-advised to use const with object values, because those values can still be changed even though the variable can't be re-assigned. This leads to potential confusion down the line, so I think it's wise to avoid situations like:_
+
+```javascript
+const actors = [
+    "Morgan Freeman", "Jennifer Aniston"
+];
+
+actors[2] = "Tom Cruise";   // OK :(
+actors = [];                // Error!
+```
+
 ## VALUES
 
 A primitive type gather a amount of bits, which resolves in a value. When you do not need anymore, it dissipates, ands its bits space is recycled for the next value to come through.
@@ -50,3 +75,21 @@ To read more about it:
 - <https://github.com/alexreardon/big-number-demos>
 - <https://github.com/MikeMcl/bignumber.js/>
 - [Alexander Reardon: Let's go big (Big numbers in JavaScript) | JSConf EU 2017](https://www.youtube.com/watch?v=9SHOfZI_SsM&t=26s)
+
+### Boolean States
+
+A boolean state it relates to a ON and OFF behavior. TRUE or FALSE.
+
+In javascript, when we are comparing strings:
+
+"_it goes from left to right, comparing the Unicode codes one by one_"
+
+```javascript
+console.log("Aard" < "Zoroas") // true
+```
+
+The only value in javascript hat is not equal to itself is "not a number".
+
+```javascript
+console.log(NaN == NaN)
+```
