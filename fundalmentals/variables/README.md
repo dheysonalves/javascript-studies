@@ -14,9 +14,13 @@ In any case, javascript files does have many ways to manage workflow, but we fol
 
 ---
 
-## VAR, LET AND CONST
+## VAR, [LET](./escopo-let.js) AND [CONST](./variaveis_constantes.js)
 
-### CONST
+---
+
+## [CONSTANT VARIABLES](./variaveis_constantes.js)
+
+---
 
 Following the use-case for const, we should avoid using const for non-primitive times, which might lead to confusion, based on YOU DONT KNOW JS YET:
 
@@ -31,11 +35,15 @@ actors[2] = "Tom Cruise";   // OK :(
 actors = [];                // Error!
 ```
 
-## VALUES
+## [VALUES TYPES](./tipagem.js)
 
 A primitive type gather a amount of bits, which resolves in a value. When you do not need anymore, it dissipates, ands its bits space is recycled for the next value to come through.
 
-### Numbers
+---
+
+## [Numbers](./numbers.js)
+
+---
 
 14
 
@@ -47,9 +55,11 @@ Even so, we got some limitations related, follow the author of Elouquent Javascr
 
 "_Calculations with whole numbers (also called integers) smaller than the aforementioned 9 quadrillion are guaranteed to always be precise. Unfortunately, calculations with fractional numbers are generally not. Just as π (pi) cannot be precisely expressed by a finite number of decimal digits, many numbers lose some precision when only 64 bits are available to store them. This is a shame, but it causes practical problems only in specific situations. The important thing is to be aware of it and treat fractional digital numbers as approximations, not as precise values._"
 
-#### Numbers: Decimals, Floating Points Problems
+## Numbers: Decimals, Floating Points Problems
 
-#### Problem
+---
+
+### Problem
 
 1. Mixing numbers with floating numbers might get innacurate results
 
@@ -76,7 +86,9 @@ To read more about it:
 - <https://github.com/MikeMcl/bignumber.js/>
 - [Alexander Reardon: Let's go big (Big numbers in JavaScript) | JSConf EU 2017](https://www.youtube.com/watch?v=9SHOfZI_SsM&t=26s)
 
-### Boolean States
+---
+
+## Boolean States
 
 A boolean state it relates to a ON and OFF behavior. TRUE or FALSE.
 
@@ -92,4 +104,51 @@ The only value in javascript hat is not equal to itself is "not a number".
 
 ```javascript
 console.log(NaN == NaN)
+```
+
+---
+
+## Coersion
+
+In javascript, it automatically type cast a variable when comparing. It is called _type coersion_
+
+```javascript
+"5" + 1 // "51"
+"5" - 1 // 4
+8 * null // 0
+false == 0 // true
+```
+
+But when considering verify its value and type, it should consider using the _three-character operator verification_.
+
+```javascript
+false === 0 // false
+"1" === 1 // false
+```
+
+There are some types of coersion, explicit and implicit. Explicit works when you are using with itention the javascript API to cast some value. Implicit works automatically without this API.
+
+Depending on types, the implicit coersion works diferentlly.
+
+### **STRING**
+
+In strings, the implicit coersion is triggered by the + operator.
+
+```javascript
+3 + '' // "3" implicit
+String(3) // explicit
+```
+
+### **BOOLEAN**
+
+Boolean coersion works in a different way. It does a coersion on the left value, depending on the type. Following the author of Eloquent Javascript 3th edition, he says:
+
+"_The logical operators && and || handle values of different types in a peculiar way. They will convert the value on their left side to Boolean type in order to decide what to do, but depending on the operator and the result of that conversion, they will return either the original left-hand value or the right-hand value._"
+
+which means, they might return their original value:
+
+```javascript
+// returns number 123, instead of returning true
+// 'hello' and 123 are still coerced to boolean internally to calculate the expression
+let x = 'hello' && 123;   // x === 123
 ```
