@@ -130,6 +130,14 @@ There are some types of coersion, explicit and implicit. Explicit works when you
 
 Depending on types, the implicit coersion works diferentlly.
 
+## #References
+
+---
+
+[Expressions and Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators)
+
+[Coercion Type Explained](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
+
 ### **STRING**
 
 In strings, the implicit coersion is triggered by the + operator.
