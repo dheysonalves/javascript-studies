@@ -130,7 +130,7 @@ There are some types of coersion, explicit and implicit. Explicit works when you
 
 Depending on types, the implicit coersion works diferentlly.
 
-## #References
+## References
 
 ---
 
